@@ -10,6 +10,7 @@
 		D1452D371CB1192300FB389D /* MessageVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1452D361CB1192300FB389D /* MessageVIewController.swift */; };
 		D1452D3B1CB1198500FB389D /* DiscoverVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1452D3A1CB1198500FB389D /* DiscoverVIewController.swift */; };
 		D1452D3D1CB119A200FB389D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1452D3C1CB119A200FB389D /* ProfileViewController.swift */; };
+		D1452D3F1CB1200000FB389D /* CustomTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1452D3E1CB1200000FB389D /* CustomTools.swift */; };
 		D14CE34A1CB10AFD00E39D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14CE3491CB10AFD00E39D75 /* AppDelegate.swift */; };
 		D14CE34F1CB10AFD00E39D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14CE34D1CB10AFD00E39D75 /* Main.storyboard */; };
 		D14CE3511CB10AFD00E39D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14CE3501CB10AFD00E39D75 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 		D1452D361CB1192300FB389D /* MessageVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageVIewController.swift; sourceTree = "<group>"; };
 		D1452D3A1CB1198500FB389D /* DiscoverVIewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverVIewController.swift; sourceTree = "<group>"; };
 		D1452D3C1CB119A200FB389D /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D1452D3E1CB1200000FB389D /* CustomTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTools.swift; sourceTree = "<group>"; };
 		D14CE3461CB10AFC00E39D75 /* CXWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14CE3491CB10AFD00E39D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14CE34E1CB10AFD00E39D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 		D14CE3741CB10EF700E39D75 /* Tool(工具) */ = {
 			isa = PBXGroup;
 			children = (
+				D1452D3E1CB1200000FB389D /* CustomTools.swift */,
 			);
 			path = "Tool(工具)";
 			sourceTree = "<group>";
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1452D3F1CB1200000FB389D /* CustomTools.swift in Sources */,
 				D1452D3D1CB119A200FB389D /* ProfileViewController.swift in Sources */,
 				D14CE34A1CB10AFD00E39D75 /* AppDelegate.swift in Sources */,
 				D1452D3B1CB1198500FB389D /* DiscoverVIewController.swift in Sources */,
@@ -478,6 +482,7 @@
 				INFOPLIST_FILE = CXWeiBo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.gintoki.CXWeiBo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
