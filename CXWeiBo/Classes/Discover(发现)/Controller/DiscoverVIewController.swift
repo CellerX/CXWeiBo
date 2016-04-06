@@ -8,6 +8,8 @@
 
 import UIKit
 
-class DiscoverVIewController: UITableViewController {
-
+class DiscoverVIewController: BaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

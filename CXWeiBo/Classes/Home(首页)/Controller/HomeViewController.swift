@@ -8,6 +8,27 @@
 
 import UIKit
 
-class HomeViewController: UITableViewController {
+class HomeViewController: BaseViewController {
 
+    private lazy var titleBtn : TitleButton = TitleButton()
+    
+    // MARK:- 系统回调函
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
+        guard isLogin else{
+            visitorView.addRotationAnim()
+            return
+        }
+        
+        setupNavigationBar()
+    }
+}
+
+extension HomeViewController{
+    private func setupNavigationBar(){
+        
+    }
 }

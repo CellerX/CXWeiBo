@@ -13,15 +13,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    let isLogin: Bool = false
+    
     var defaultViewController : UIViewController {
+        if isLogin{
+            return MainViewController()
+        }else{
+            return UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()!
+        }
         
-        return MainViewController()
     }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+        //设置全局颜色
         UITabBar.appearance().tintColor = UIColor.orangeColor()
-        
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
         //初始化窗口
         window = UIWindow.init(frame: UIScreen.mainScreen().bounds)
         window?.rootViewController = defaultViewController

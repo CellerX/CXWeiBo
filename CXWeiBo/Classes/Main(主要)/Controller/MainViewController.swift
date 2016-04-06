@@ -10,34 +10,33 @@ import UIKit
 
 class MainViewController: UITabBarController{
     
+    private lazy var composeBtn : UIButton = UIButton(imageName: "tabbar_compose_icon_add", bgImageName: "tabbar_compose_button")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        setupChildVC()
+        setupComposeBtn()
         
     }
 }
 
-
-
+//MARK:- 设置界面
 extension MainViewController{
-    //MARK:- Setup
-    func setupChildVC() {
-        addChildViewController(HomeViewController(), iconName: "tabbar_home", title: "首页")
-        addChildViewController(MessageVIewController(), iconName: "tabbar_message_center", title: "消息")
-        addChildViewController(DiscoverVIewController(), iconName: "tabbar_discover", title: "发现")
-        addChildViewController(ProfileViewController(), iconName: "tabbar_profile", title: "我")
+    
+    ///添加发布按钮
+    private func setupComposeBtn(){
+        tabBar.addSubview(composeBtn)
+        composeBtn.center = CGPoint(x: tabBar.bounds.size.width * 0.5, y: tabBar.bounds.size.height * 0.5)
+        composeBtn.addTarget(self, action: #selector(MainViewController.composeBtnClick), forControlEvents: .TouchUpInside)
     }
     
-    //MARK:- ReloadMethod
-    private func addChildViewController(childController: UIViewController, iconName: String, title: String) {
-        
-        childController.title = title
-        childController.tabBarItem.image = UIImage(named: iconName)
-        childController.tabBarItem.selectedImage = UIImage(named: iconName + "_highlighted")
-        
-        let childNav = UINavigationController.init(rootViewController: childController)
-        
-        addChildViewController(childNav)
+}
+
+//MARK:- 事件
+
+extension MainViewController{
+    ///发布按钮
+    @objc private func composeBtnClick(){
+        CXLog("composeBtnClick")
     }
 }
