@@ -19,7 +19,6 @@ class TitleButton: UIButton {
         sizeToFit()
     }
     
-    // swift中规定:重写控件的init(frame方法)或者init()方法,必须重写init?(coder aDecoder: NSCoder)
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }

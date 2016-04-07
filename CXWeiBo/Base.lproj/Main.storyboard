@@ -7,7 +7,6 @@
         <!--Main View Controller-->
         <scene sceneID="mSl-hY-qAn">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8NB-qS-DH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController id="Bya-49-3vm" customClass="MainViewController" customModule="CXWeiBo" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" id="DXu-JS-Jcj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -22,6 +21,7 @@
                         <segue destination="CCq-uT-U9a" kind="relationship" relationship="viewControllers" id="kdz-CR-65b"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8NB-qS-DH8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-541" y="-59"/>
         </scene>
