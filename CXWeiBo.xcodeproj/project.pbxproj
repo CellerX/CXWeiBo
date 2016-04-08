@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		49D16FD96D4AFE9A21EE16C0 /* Pods_CXWeiBo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 800ACF117ADAA08798798AF8 /* Pods_CXWeiBo.framework */; };
 		D1452D3F1CB1200000FB389D /* CustomTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1452D3E1CB1200000FB389D /* CustomTools.swift */; };
+		D146470D1CB7E7E10064A8C6 /* UserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146470C1CB7E7E10064A8C6 /* UserAccount.swift */; };
+		D14647111CB7FE1D0064A8C6 /* WelComeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146470F1CB7FE1D0064A8C6 /* WelComeViewController.swift */; };
+		D14647121CB7FE1D0064A8C6 /* WelComeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D14647101CB7FE1D0064A8C6 /* WelComeViewController.xib */; };
+		D14647141CB800680064A8C6 /* UserAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14647131CB800680064A8C6 /* UserAccountModel.swift */; };
 		D14CE34A1CB10AFD00E39D75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14CE3491CB10AFD00E39D75 /* AppDelegate.swift */; };
 		D14CE34F1CB10AFD00E39D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D14CE34D1CB10AFD00E39D75 /* Main.storyboard */; };
 		D14CE3511CB10AFD00E39D75 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D14CE3501CB10AFD00E39D75 /* Assets.xcassets */; };
@@ -33,6 +37,10 @@
 		D1B70D781CB54CB500CFE72B /* PopoverViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B70D761CB54CB500CFE72B /* PopoverViewController.xib */; };
 		D1B70D7A1CB5526C00CFE72B /* PopoverAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B70D791CB5526C00CFE72B /* PopoverAnimator.swift */; };
 		D1B70D7C1CB555EF00CFE72B /* CXPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B70D7B1CB555EF00CFE72B /* CXPresentationController.swift */; };
+		D1B70D801CB65A4E00CFE72B /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B70D7E1CB65A4E00CFE72B /* OAuthViewController.swift */; };
+		D1B70D811CB65A4E00CFE72B /* OAuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D1B70D7F1CB65A4E00CFE72B /* OAuthViewController.xib */; };
+		D1D5E8051CB7CC0800ABC27F /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5E8041CB7CC0800ABC27F /* NetWorkTools.swift */; };
+		D1D5E8071CB7D35B00ABC27F /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D5E8061CB7D35B00ABC27F /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +48,10 @@
 		800ACF117ADAA08798798AF8 /* Pods_CXWeiBo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CXWeiBo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8790A07BE8187D7DE6ED2D30 /* Pods-CXWeiBo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CXWeiBo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CXWeiBo/Pods-CXWeiBo.release.xcconfig"; sourceTree = "<group>"; };
 		D1452D3E1CB1200000FB389D /* CustomTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTools.swift; sourceTree = "<group>"; };
+		D146470C1CB7E7E10064A8C6 /* UserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccount.swift; sourceTree = "<group>"; };
+		D146470F1CB7FE1D0064A8C6 /* WelComeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelComeViewController.swift; sourceTree = "<group>"; };
+		D14647101CB7FE1D0064A8C6 /* WelComeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelComeViewController.xib; sourceTree = "<group>"; };
+		D14647131CB800680064A8C6 /* UserAccountModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserAccountModel.swift; sourceTree = "<group>"; };
 		D14CE3461CB10AFC00E39D75 /* CXWeiBo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CXWeiBo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D14CE3491CB10AFD00E39D75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D14CE34E1CB10AFD00E39D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +78,10 @@
 		D1B70D761CB54CB500CFE72B /* PopoverViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopoverViewController.xib; sourceTree = "<group>"; };
 		D1B70D791CB5526C00CFE72B /* PopoverAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverAnimator.swift; sourceTree = "<group>"; };
 		D1B70D7B1CB555EF00CFE72B /* CXPresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CXPresentationController.swift; sourceTree = "<group>"; };
+		D1B70D7E1CB65A4E00CFE72B /* OAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		D1B70D7F1CB65A4E00CFE72B /* OAuthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OAuthViewController.xib; sourceTree = "<group>"; };
+		D1D5E8041CB7CC0800ABC27F /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
+		D1D5E8061CB7D35B00ABC27F /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +111,15 @@
 				800ACF117ADAA08798798AF8 /* Pods_CXWeiBo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D146470E1CB7F7300064A8C6 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				D146470F1CB7FE1D0064A8C6 /* WelComeViewController.swift */,
+				D14647101CB7FE1D0064A8C6 /* WelComeViewController.xib */,
+			);
+			path = Welcome;
 			sourceTree = "<group>";
 		};
 		D14CE33D1CB10AFC00E39D75 = {
@@ -172,6 +197,8 @@
 		D14CE3681CB10EF700E39D75 /* Main(主要) */ = {
 			isa = PBXGroup;
 			children = (
+				D146470E1CB7F7300064A8C6 /* Welcome */,
+				D1B70D7D1CB6592A00CFE72B /* OAuth */,
 				D156DE2F1CB40A5C0027B863 /* Visitor */,
 				D156DE381CB528E40027B863 /* MainViewController.swift */,
 			);
@@ -203,6 +230,8 @@
 				D1452D3E1CB1200000FB389D /* CustomTools.swift */,
 				D156DE2A1CB407130027B863 /* UIButton-Extension.swift */,
 				D156DE441CB5341D0027B863 /* BarButtonItem+Extension.swift */,
+				D1D5E8041CB7CC0800ABC27F /* NetWorkTools.swift */,
+				D1D5E8061CB7D35B00ABC27F /* Common.swift */,
 			);
 			path = "Tool(工具)";
 			sourceTree = "<group>";
@@ -226,6 +255,17 @@
 				D1B70D7B1CB555EF00CFE72B /* CXPresentationController.swift */,
 			);
 			path = PopoverViwe;
+			sourceTree = "<group>";
+		};
+		D1B70D7D1CB6592A00CFE72B /* OAuth */ = {
+			isa = PBXGroup;
+			children = (
+				D1B70D7E1CB65A4E00CFE72B /* OAuthViewController.swift */,
+				D1B70D7F1CB65A4E00CFE72B /* OAuthViewController.xib */,
+				D146470C1CB7E7E10064A8C6 /* UserAccount.swift */,
+				D14647131CB800680064A8C6 /* UserAccountModel.swift */,
+			);
+			path = OAuth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,8 +336,10 @@
 				D14CE34F1CB10AFD00E39D75 /* Main.storyboard in Resources */,
 				D1B70D781CB54CB500CFE72B /* PopoverViewController.xib in Resources */,
 				D156DE3F1CB52C850027B863 /* Message.storyboard in Resources */,
+				D1B70D811CB65A4E00CFE72B /* OAuthViewController.xib in Resources */,
 				D156DE1C1CB3F30C0027B863 /* Home.storyboard in Resources */,
 				D156DE261CB3FD170027B863 /* Discover.storyboard in Resources */,
+				D14647121CB7FE1D0064A8C6 /* WelComeViewController.xib in Resources */,
 				D156DE211CB3FC760027B863 /* Null.storyboard in Resources */,
 				D156DE351CB40AA10027B863 /* VisitorView.xib in Resources */,
 			);
@@ -359,12 +401,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1452D3F1CB1200000FB389D /* CustomTools.swift in Sources */,
+				D14647111CB7FE1D0064A8C6 /* WelComeViewController.swift in Sources */,
 				D1B70D7C1CB555EF00CFE72B /* CXPresentationController.swift in Sources */,
 				D156DE411CB52CC50027B863 /* DiscoverVIewController.swift in Sources */,
+				D1D5E8051CB7CC0800ABC27F /* NetWorkTools.swift in Sources */,
+				D1D5E8071CB7D35B00ABC27F /* Common.swift in Sources */,
+				D146470D1CB7E7E10064A8C6 /* UserAccount.swift in Sources */,
 				D1B70D771CB54CB500CFE72B /* PopoverViewController.swift in Sources */,
+				D1B70D801CB65A4E00CFE72B /* OAuthViewController.swift in Sources */,
 				D156DE391CB528E40027B863 /* MainViewController.swift in Sources */,
 				D14CE34A1CB10AFD00E39D75 /* AppDelegate.swift in Sources */,
 				D156DE451CB5341D0027B863 /* BarButtonItem+Extension.swift in Sources */,
+				D14647141CB800680064A8C6 /* UserAccountModel.swift in Sources */,
 				D156DE371CB418AB0027B863 /* TitleButton.swift in Sources */,
 				D156DE431CB52CE50027B863 /* ProfileViewController.swift in Sources */,
 				D1B70D7A1CB5526C00CFE72B /* PopoverAnimator.swift in Sources */,

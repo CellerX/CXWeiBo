@@ -16,12 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let isLogin: Bool = false
     
     var defaultViewController : UIViewController {
-        if isLogin{
-            return MainViewController()
-        }else{
-            return UIStoryboard.init(name: "Main", bundle: nil).instantiateInitialViewController()!
-        }
         
+        return UserAccountModel.shareInstance.isLogin ? WelComeViewController() : UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController()!
     }
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {

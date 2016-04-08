@@ -19,7 +19,7 @@ class HomeViewController: BaseViewController {
         
         
         
-        guard isLogin else{
+        guard UserAccountModel.shareInstance.isLogin else{
             visitorView.addRotationAnim()
             
             return

@@ -12,10 +12,8 @@ class BaseViewController: UITableViewController {
 
     lazy var visitorView : VisitorView = VisitorView.visitorView()
     
-    var isLogin : Bool = true
-    
     override func loadView() {
-        isLogin ? super.loadView() : setupVisitorView()
+        UserAccountModel.shareInstance.isLogin ? super.loadView() : setupVisitorView()
     }
     
     override func viewDidLoad() {
@@ -48,6 +46,11 @@ extension BaseViewController{
     }
     
     @objc private func loginBtnClick(){
-        CXLog("loginBtnClick")
+        
+        let oAuthNavVc = UINavigationController(rootViewController: OAuthViewController())
+        oAuthNavVc.navigationController?.hidesBottomBarWhenPushed = true
+        self.presentViewController(oAuthNavVc, animated: true, completion: nil)
+        
+        
     }
 }

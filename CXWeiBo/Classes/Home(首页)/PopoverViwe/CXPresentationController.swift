@@ -14,7 +14,7 @@ class CXPresentationController: UIPresentationController {
         super.containerViewWillLayoutSubviews()
         
         //设置位置
-        containerView?.frame = CGRect(x: 100, y: 60, width: 180, height: 250)
+        presentedView()?.frame = CGRect(x: 100, y: 60, width: 180, height: 250)
         
         //设置蒙版
         setupCoverView()
@@ -27,7 +27,7 @@ extension CXPresentationController{
     private func setupCoverView(){
         let coverView = UIView()
         
-        coverView.frame = presentingViewController.view.bounds
+        coverView.frame = containerView!.bounds
         coverView.backgroundColor = UIColor.init(white: 0.8, alpha: 0.3)
         
         
@@ -43,7 +43,7 @@ extension CXPresentationController{
 extension CXPresentationController{
     
     @objc private func coverClick(){
-        CXLog("1")
+    
         presentingViewController.dismissViewControllerAnimated(true, completion: nil)
     }
     
