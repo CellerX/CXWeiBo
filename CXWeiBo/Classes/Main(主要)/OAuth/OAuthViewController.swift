@@ -49,7 +49,7 @@ extension OAuthViewController{
 //MARK:- Actions
 extension OAuthViewController{
     @objc private func navRightBtnClick(){
-        let jsString = "document.getElementById('userId').value='18582057329';" + "document.getElementById('passwd').value='xuhe123456'"
+        let jsString = "document.getElementById('userId').value='18582057329';document.getElementById('passwd').value='xuhe123456';"
         
         webView.stringByEvaluatingJavaScriptFromString(jsString)
         
@@ -148,6 +148,8 @@ extension OAuthViewController{
             accountPath = (accountPath as NSString).stringByAppendingPathComponent("account.plist")
             
             NSKeyedArchiver.archiveRootObject(account, toFile: accountPath)
+            
+            UserAccountModel.shareInstance.account = account
             
             //切换到Welcome
             self.dismissViewControllerAnimated(false, completion: { 

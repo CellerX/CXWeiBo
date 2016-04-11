@@ -37,6 +37,9 @@ extension MainViewController{
 extension MainViewController{
     ///发布按钮
     @objc private func composeBtnClick(){
-        CXLog("composeBtnClick")
+        let comVC = ComposeViewController()
+        let navVC = UINavigationController(rootViewController: comVC)
+        presentViewController(navVC, animated: true, completion: nil)
+        
     }
 }
